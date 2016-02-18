@@ -1,0 +1,128 @@
+Paul Lewis
+
+Analysis report of different test runs.
+
+Note: In all tests, N == 5000.
+
+=== Test 1: ===
+
+lambda = 2
+mu = 3
+M = 2
+
+Printing a priori calculations...
+
+Po =  0.5000
+L = 0.7500
+W = 0.3750
+Lq = 0.0833
+Wq = 0.0417
+Rho = 0.3333
+
+Printing a posteriori calculations...
+
+Percentage of idle time (Po) = 0.4916
+Average time spent in system (W) = 0.3737
+Average time spent waiting in queue (Wq) = 0.0420
+Probability of having to wait for service = 0.1698
+Probability of not having to wait for service = 0.8302
+
+=== Test 2: ===
+
+lambda = 2
+mu = 3
+M = 4
+
+Printing a priori calculations...
+
+Po =  0.5199
+L = 0.6677
+W = 0.3338
+Lq = 0.0010
+Wq = 0.0005
+Rho = 0.1667
+
+Printing a posteriori calculations...
+
+Percentage of idle time (Po) = 0.5226
+Average time spent in system (W) = 0.3312
+Average time spent waiting in queue (Wq) = 0.0004
+Probability of having to wait for service = 0.0052
+Probability of not having to wait for service = 0.9948
+
+=== Test 3: ===
+
+lambda = 2
+mu = 2
+M = 2
+
+Printing a priori calculations...
+
+Po =  0.3333
+L = 1.3333
+W = 0.6667
+Lq = 0.3333
+Wq = 0.1667
+Rho = 0.5000
+
+Printing a posteriori calculations...
+
+Percentage of idle time (Po) = 0.3326
+Average time spent in system (W) = 0.6739
+Average time spent waiting in queue (Wq) = 0.1730
+Probability of having to wait for service = 0.3254
+Probability of not having to wait for service = 0.6746
+
+=== Test 4: ===
+
+lambda = 4
+mu = 2
+M = 3
+
+Printing a priori calculations...
+
+Po =  0.1111
+L = 2.8889
+W = 0.7222
+Lq = 0.8889
+Wq = 0.2222
+Rho = 0.6667
+
+Printing a posteriori calculations...
+
+Percentage of idle time (Po) = 0.1093
+Average time spent in system (W) = 0.8337
+Average time spent waiting in queue (Wq) = 0.3275
+Probability of having to wait for service = 0.4662
+Probability of not having to wait for service = 0.5338
+
+=== Test 5: ===
+
+lambda = 6
+mu = 8
+M = 10
+
+Printing a priori calculations...
+
+Po =  0.4837
+L = 0.7500
+W = 0.1250
+Lq = 0.0000
+Wq = 0.0000
+Rho = 0.0750
+
+Printing a posteriori calculations...
+
+Percentage of idle time (Po) = 0.4770
+Average time spent in system (W) = 0.1242
+Average time spent waiting in queue (Wq) = 0.0000
+Probability of having to wait for service = 0.0000
+Probability of not having to wait for service = 1.0000
+
+============================
+
+    In each test run the a posteriori results compare very favorably to the statistics
+predicted in the a priori calculations. They are usually only off by a couple decimal places.
+As one can see, having lambda be greater than mu increases the probability of having to wait
+for service, and having a high mu compared to lambda or having a high number of servers decreases 
+the probability of having to wait.
