@@ -1,0 +1,32 @@
+Paul Lewis
+Simulation
+
+User's Manual
+
+The program has been written tested in Linux (Mint) and compiled using GCC.
+
+main() is contained in simulation.c
+
+There is a working Makefile. Compile with make command.
+
+Alternatively the program can be compiled using the command
+    gcc -Wall -o simulation simulation.c heap.c FIFOqueue.c customer.c -lm
+
+The program can be run using the command
+    ./simulation
+The program does not accept any parameters.
+
+When the program runs, it will display the a priori calculations in the console, then after
+running the simulation it will display the a posteriori results of the simulation.
+
+The only input file necessary is "simulation.txt". It must be contained in the
+same directory as the running program.
+The format of simulation.txt should be four integers each on their own line
+lambda (e.g. 2)
+mu (e.g. 3
+M (e.g. 2)
+N (e.g. 5000)
+
+Output goes to the console.
+
+All features work and their are no known bugs.
